@@ -83,7 +83,31 @@ body {
   background-color: #cbd5e1;
 }
 
-/* Pastikan teks pada elemen ul dan li berada di sebelah kanan */
 .text-right {
   text-align: right;
+}
+
+nav > div {
+  display: flex;
+  gap: 1rem;
+}
+
+footer > p {
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  nav > div {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-column {
+    flex-direction: column !important;
+  }
+  .mobile-image {
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
 }
